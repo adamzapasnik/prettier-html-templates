@@ -1,0 +1,427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`if_else_end.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<div
+<% start %>
+    class="a"
+class="a"
+          <% middle %>
+          class="a"
+<% end %>
+></div>
+
+<div <% start %>class="a"<% middle %>class="a"<% end %>></div>
+<div <% start %> class="a"<% middle %>class="a" <% end %>></div>
+<div <% start %> class="a" <% middle %> class="a" <% end %> ></div>
+
+<div
+<% start %>
+    class="a"
+class="a"
+<% end %>
+></div>
+
+<div <% start %> class="a"<% end %> ></div>
+<div <% start %>class="a"<% end %>></div>
+
+<div
+<% start %>
+    class="a"
+    <% start %>
+    class="a"
+<% end %>
+class="a"
+          <% middle %>
+          class="a"
+          <% start %>
+    class="a"
+class="a"
+          <% middle %>
+          class="a"
+<% end %>
+<% end %>
+></div>
+
+<div>
+  <% start %>
+    a
+  <% middle %>
+a  
+  <% end %>
+    </div>
+
+    <div>
+     <% start %>
+    a
+     <% start %>
+    a
+  <% middle %>
+a  
+  <% end %>
+  <% middle %>
+   <% start %>
+    a
+  <% middle %>
+a  
+  <% end %>
+a  
+  <% end %>
+    </div>
+
+
+<li class="<% start %>a<% middle %>a<% end %>"></li>
+<li class="<% start %> a <% middle %> a <% end %>"></li>
+<li class="<% start %> a <% middle %> a<% end %> a"></li>
+<li class="<% start %> a <% middle %> a <% end %>a"></li>
+<li class="a <% start %> a <% middle %> a <% end %> a"></li>
+<li class="a<% start %>a<% middle %>a<% end %>a"></li>
+<li class="a <% start %>a<% middle %>a<% end %>a"></li>
+<li class="<% start %> a <% middle %><% end %>"></li>
+
+<li class="a<% start %>a<% end %>a"></li>
+<li class="a <% start %> a <% end %> a"></li>
+<li class="a <% start %> a <% end %>a"></li>
+<li class="a <% start %> a<% end %>a"></li>
+<li class="a <% start %> a<% end %> a"></li>
+<li class="a <% start %>a<% end %> a"></li>
+<li class="a<% start %> a<% end %>a"></li>
+
+=====================================output=====================================
+<div
+  <% start %>
+    class="a"
+    class="a"
+  <% middle %>
+    class="a"
+  <% end %>
+></div>
+
+<div
+  <% start %>
+    class="a"
+  <% middle %>
+    class="a"
+  <% end %>
+></div>
+<div
+  <% start %>
+    class="a"
+  <% middle %>
+    class="a"
+  <% end %>
+></div>
+<div
+  <% start %>
+    class="a"
+  <% middle %>
+    class="a"
+  <% end %>
+></div>
+
+<div
+  <% start %>
+    class="a"
+    class="a"
+  <% end %>
+></div>
+
+<div
+  <% start %>
+    class="a"
+  <% end %>
+></div>
+<div
+  <% start %>
+    class="a"
+  <% end %>
+></div>
+
+<div
+  <% start %>
+    class="a"
+    <% start %>
+      class="a"
+    <% end %>
+    class="a"
+  <% middle %>
+    class="a"
+    <% start %>
+      class="a"
+      class="a"
+    <% middle %>
+      class="a"
+    <% end %>
+  <% end %>
+></div>
+
+<div>
+  <% start %>
+    a
+  <% middle %>
+    a
+  <% end %>
+</div>
+
+<div>
+  <% start %>
+    a
+    <% start %>
+      a
+    <% middle %>
+      a
+    <% end %>
+  <% middle %>
+    <% start %>
+      a
+    <% middle %>
+      a
+    <% end %>
+    a
+  <% end %>
+</div>
+
+<li class="<% start %>a<% middle %>a<% end %>"></li>
+<li class="<% start %> a <% middle %> a <% end %>"></li>
+<li class="<% start %> a <% middle %> a<% end %> a"></li>
+<li class="<% start %> a <% middle %> a <% end %>a"></li>
+<li class="a <% start %> a <% middle %> a <% end %> a"></li>
+<li class="a<% start %>a<% middle %>a<% end %>a"></li>
+<li class="a <% start %>a<% middle %>a<% end %>a"></li>
+<li class="<% start %> a <% middle %><% end %>"></li>
+
+<li class="a<% start %>a<% end %>a"></li>
+<li class="a <% start %> a <% end %> a"></li>
+<li class="a <% start %> a <% end %>a"></li>
+<li class="a <% start %> a<% end %>a"></li>
+<li class="a <% start %> a<% end %> a"></li>
+<li class="a <% start %>a<% end %> a"></li>
+<li class="a<% start %> a<% end %>a"></li>
+
+================================================================================
+`;
+
+exports[`multi_else.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+ <div>
+     <% start %>
+    a
+     <% middle %>
+    a
+  <% middle %>
+a
+  <% end %>
+
+=====================================output=====================================
+<div>
+  <% start %>
+    a
+  <% middle %>
+    a
+  <% middle %>
+    a
+  <% end %>
+</div>
+
+================================================================================
+`;
+
+exports[`none.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<div class="ss   ss   "   >
+  <h2
+    >
+    </h2></div>
+=====================================output=====================================
+<div class="ss ss">
+  <h2></h2>
+</div>
+
+================================================================================
+`;
+
+exports[`only_expressions.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+
+<% %>
+
+
+<% start %>
+  <% a %>
+  <% middle %>
+  <% a %>
+<% end %>
+
+    <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+
+=====================================output=====================================
+<% %>
+
+<% start %>
+  <% a %>
+<% middle %>
+  <% a %>
+<% end %>
+
+<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+
+================================================================================
+`;
+
+exports[`plain.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<a class="a<%  %>a<%  %>a"></a>
+<a class="a <%  %> a <%  %> a"></a>
+<a class="a <%  %> a <%  %>a"></a>
+<a class="a <%  %> a<%  %>a"></a>
+<a class="a <%  %> a<%  %> a"></a>
+<a class="a <%  %>a<%  %> a"></a>
+<a class="a<%  %> a<%  %>a"></a>
+<a class="<%  %><%  %>"></a>
+<a class="<%  %> <%  %>"></a>
+<a class="<%  %>a<%  %>"></a>
+<a class="<%  %> a <%  %>"></a>
+<a class="a<%  %><%  %>a"></a>
+<a class="a <%  %><%  %> a"></a>
+<a class="a <%  %> <%  %> a"></a>
+<a class="a <%  %> <%  %>a"></a>
+<a class="a<%  %> <%  %>a"></a>
+
+
+<a class="a<%  %>  <%  %>a"></a>
+<a class="a  <%  %>  <%  %>  a"></a>
+<a class="  <%  %>  <%  %>  "></a>
+
+<a class="<%  %>"></a>
+<a class=" <%  %>"></a>
+<a class=" <%  %> "></a>
+<a class="<%  %> "></a>
+
+
+
+<a class=""<%  %>></a>
+<a class="" <%  %>></a>
+<a <%  %>class=""<%  %>></a>
+<a    <%  %>    class=""    <%  %> ></a>
+
+
+=====================================output=====================================
+<a class="a<%  %>a<%  %>a"></a>
+<a class="a <%  %> a <%  %> a"></a>
+<a class="a <%  %> a <%  %>a"></a>
+<a class="a <%  %> a<%  %>a"></a>
+<a class="a <%  %> a<%  %> a"></a>
+<a class="a <%  %>a<%  %> a"></a>
+<a class="a<%  %> a<%  %>a"></a>
+<a class="<%  %><%  %>"></a>
+<a class="<%  %> <%  %>"></a>
+<a class="<%  %>a<%  %>"></a>
+<a class="<%  %> a <%  %>"></a>
+<a class="a<%  %><%  %>a"></a>
+<a class="a <%  %><%  %> a"></a>
+<a class="a <%  %> <%  %> a"></a>
+<a class="a <%  %> <%  %>a"></a>
+<a class="a<%  %> <%  %>a"></a>
+
+<a class="a<%  %>  <%  %>a"></a>
+<a class="a  <%  %>  <%  %>  a"></a>
+<a class="  <%  %>  <%  %>  "></a>
+
+<a class="<%  %>"></a>
+<a class=" <%  %>"></a>
+<a class=" <%  %> "></a>
+<a class="<%  %> "></a>
+
+<a class="" <%  %>></a>
+<a class="" <%  %>></a>
+<a <%  %>class="" <%  %>></a>
+<a <%  %> class="" <%  %>></a>
+
+================================================================================
+`;
+
+exports[`start_and_middle_nested.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<div>
+   <% start_nested %>
+    <% middle_nested %>
+      ds
+    <% middle_nested %>
+      <div>ds</div>
+  <% end %>
+</div>
+<span>
+   <% start_nested %>
+    <% middle_nested %>
+      <% %>
+    <% middle_nested %>
+      <div>ds</div>
+    <% end %>
+
+</span>
+
+<div>
+   <% start_nested %>
+    <% middle_nested %>
+      ds
+    <% middle_nested %>
+      <div>
+      ds
+        </div>
+    <% end %>
+</div>
+
+=====================================output=====================================
+<div>
+  <% start_nested %>
+    <% middle_nested %>
+      ds
+    <% middle_nested %>
+      <div>ds</div>
+  <% end %>
+</div>
+<span>
+  <% start_nested %>
+    <% middle_nested %>
+      <% %>
+    <% middle_nested %>
+      <div>ds</div>
+  <% end %>
+</span>
+
+<div>
+  <% start_nested %>
+    <% middle_nested %>
+      ds
+    <% middle_nested %>
+      <div>ds</div>
+  <% end %>
+</div>
+
+================================================================================
+`;

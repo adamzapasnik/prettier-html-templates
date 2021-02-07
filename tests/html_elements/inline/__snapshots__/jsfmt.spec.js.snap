@@ -1,0 +1,335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`span.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<span><% %> a</span>
+<span><% %></span>
+<span> <% %> </span>
+<span><% %> </span>
+<span> <% %></span>
+<span>a <% %> a</span>
+<span>a<% %></span>
+<span> <% %> a</span>
+<span>a<% %> </span>
+<span> a<% %>a </span>
+<span>a <% %>a</span>
+<span>a<% %> a</span>
+
+<div>a<span><% %> a</span></div>
+<div>a<span><% %></span></div>
+<div>a<span> <% %> </span></div>
+<div>a<span><% %> </span></div>
+<div>a<span> <% %></span></div>
+<div>a<span>a <% %> a</span></div>
+<div>a<span>a<% %></span></div>
+<div>a<span> <% %> a</span></div>
+<div>a<span>a<% %> </span></div>
+<div>a<span> a<% %>a </span></div>
+<div>a<span>a <% %>a</span></div>
+<div>a<span>a<% %> a</span></div>
+
+<div>a <span><% %> a</span></div>
+<div>a <span><% %></span></div>
+<div>a <span> <% %> </span></div>
+<div>a <span><% %> </span></div>
+<div>a <span> <% %></span></div>
+<div>a <span>a <% %> a</span></div>
+<div>a <span>a<% %></span></div>
+<div>a <span> <% %> a</span></div>
+<div>a <span>a<% %> </span></div>
+<div>a <span> a<% %>a </span></div>
+<div>a <span>a <% %>a</span></div>
+<div>a <span>a<% %> a</span></div>
+
+<div>a<span><% %> a</span>a</div>
+<div>a<span><% %></span>a</div>
+<div>a<span> <% %> </span>a</div>
+<div>a<span><% %> </span>a</div>
+<div>a<span> <% %></span>a</div>
+<div>a<span>a <% %> a</span>a</div>
+<div>a<span>a<% %></span>a</div>
+<div>a<span> <% %> a</span>a</div>
+<div>a<span>a<% %> </span>a</div>
+<div>a<span> a<% %>a </span>a</div>
+<div>a<span>a <% %>a</span>a</div>
+<div>a<span>a<% %> a</span>a</div>
+
+<div>a<span><% %> a</span> a</div>
+<div>a<span><% %></span> a</div>
+<div>a<span> <% %> </span> a</div>
+<div>a<span><% %> </span> a</div>
+<div>a<span> <% %></span> a</div>
+<div>a<span>a <% %> a</span> a</div>
+<div>a<span>a<% %></span> a</div>
+<div>a<span> <% %> a</span> a</div>
+<div>a<span>a<% %> </span> a</div>
+<div>a<span> a<% %>a </span> a</div>
+<div>a<span>a <% %>a</span> a</div>
+<div>a<span>a<% %> a</span> a</div>
+
+<div>a <span><% %> a</span> a</div>
+<div>a <span><% %></span> a</div>
+<div>a <span> <% %> </span> a</div>
+<div>a <span><% %> </span> a</div>
+<div>a <span> <% %></span> a</div>
+<div>a <span>a <% %> a</span> a</div>
+<div>a <span>a<% %></span> a</div>
+<div>a <span> <% %> a</span> a</div>
+<div>a <span>a<% %> </span> a</div>
+<div>a <span> a<% %>a </span> a</div>
+<div>a <span>a <% %>a</span> a</div>
+<div>a <span>a<% %> a</span> a</div>
+
+<span>a
+<% %>
+a</span>
+<span>
+<% %>
+</span>
+
+<span>
+<% %><% %>
+</span>
+
+<span>
+<% start %> a <% end %>
+</span>
+
+<div><span></span><% %></div>
+<div><span></span> <% %></div>
+
+<div><% %><span></span></div>
+<div><% %> <span></span></div>
+<div><% %><span></span><% %></div>
+<div><% %> <span></span> <% %></div>
+
+=====================================output=====================================
+<span><% %> a</span>
+<span><% %></span>
+<span> <% %> </span>
+<span><% %> </span>
+<span> <% %></span>
+<span>a <% %> a</span>
+<span>a<% %></span>
+<span> <% %> a</span>
+<span>a<% %> </span>
+<span> a<% %>a </span>
+<span>a <% %>a</span>
+<span>a<% %> a</span>
+
+<div>
+  a<span><% %> a</span>
+</div>
+<div>
+  a<span><% %></span>
+</div>
+<div>
+  a<span> <% %> </span>
+</div>
+<div>
+  a<span><% %> </span>
+</div>
+<div>
+  a<span> <% %></span>
+</div>
+<div>
+  a<span>a <% %> a</span>
+</div>
+<div>
+  a<span>a<% %></span>
+</div>
+<div>
+  a<span> <% %> a</span>
+</div>
+<div>
+  a<span>a<% %> </span>
+</div>
+<div>
+  a<span> a<% %>a </span>
+</div>
+<div>
+  a<span>a <% %>a</span>
+</div>
+<div>
+  a<span>a<% %> a</span>
+</div>
+
+<div>
+  a <span><% %> a</span>
+</div>
+<div>
+  a <span><% %></span>
+</div>
+<div>
+  a <span> <% %> </span>
+</div>
+<div>
+  a <span><% %> </span>
+</div>
+<div>
+  a <span> <% %></span>
+</div>
+<div>
+  a <span>a <% %> a</span>
+</div>
+<div>
+  a <span>a<% %></span>
+</div>
+<div>
+  a <span> <% %> a</span>
+</div>
+<div>
+  a <span>a<% %> </span>
+</div>
+<div>
+  a <span> a<% %>a </span>
+</div>
+<div>
+  a <span>a <% %>a</span>
+</div>
+<div>
+  a <span>a<% %> a</span>
+</div>
+
+<div>
+  a<span><% %> a</span>a
+</div>
+<div>
+  a<span><% %></span>a
+</div>
+<div>
+  a<span> <% %> </span>a
+</div>
+<div>
+  a<span><% %> </span>a
+</div>
+<div>
+  a<span> <% %></span>a
+</div>
+<div>
+  a<span>a <% %> a</span>a
+</div>
+<div>
+  a<span>a<% %></span>a
+</div>
+<div>
+  a<span> <% %> a</span>a
+</div>
+<div>
+  a<span>a<% %> </span>a
+</div>
+<div>
+  a<span> a<% %>a </span>a
+</div>
+<div>
+  a<span>a <% %>a</span>a
+</div>
+<div>
+  a<span>a<% %> a</span>a
+</div>
+
+<div>
+  a<span><% %> a</span> a
+</div>
+<div>
+  a<span><% %></span> a
+</div>
+<div>
+  a<span> <% %> </span> a
+</div>
+<div>
+  a<span><% %> </span> a
+</div>
+<div>
+  a<span> <% %></span> a
+</div>
+<div>
+  a<span>a <% %> a</span> a
+</div>
+<div>
+  a<span>a<% %></span> a
+</div>
+<div>
+  a<span> <% %> a</span> a
+</div>
+<div>
+  a<span>a<% %> </span> a
+</div>
+<div>
+  a<span> a<% %>a </span> a
+</div>
+<div>
+  a<span>a <% %>a</span> a
+</div>
+<div>
+  a<span>a<% %> a</span> a
+</div>
+
+<div>
+  a <span><% %> a</span> a
+</div>
+<div>
+  a <span><% %></span> a
+</div>
+<div>
+  a <span> <% %> </span> a
+</div>
+<div>
+  a <span><% %> </span> a
+</div>
+<div>
+  a <span> <% %></span> a
+</div>
+<div>
+  a <span>a <% %> a</span> a
+</div>
+<div>
+  a <span>a<% %></span> a
+</div>
+<div>
+  a <span> <% %> a</span> a
+</div>
+<div>
+  a <span>a<% %> </span> a
+</div>
+<div>
+  a <span> a<% %>a </span> a
+</div>
+<div>
+  a <span>a <% %>a</span> a
+</div>
+<div>
+  a <span>a<% %> a</span> a
+</div>
+
+<span
+  >a
+  <% %>
+  a</span
+>
+<span>
+  <% %>
+</span>
+
+<span> <% %><% %> </span>
+
+<span>
+  <% start %>
+    a
+  <% end %>
+</span>
+
+<div><span></span><% %></div>
+<div><span></span> <% %></div>
+
+<div><% %><span></span></div>
+<div><% %> <span></span></div>
+<div><% %><span></span><% %></div>
+<div><% %> <span></span> <% %></div>
+
+================================================================================
+`;

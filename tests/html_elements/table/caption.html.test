@@ -1,0 +1,14 @@
+<table>
+  <caption>
+   <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+  </caption>
+</table>
+
+<table><caption><% %></caption></table>
+<table><caption>re<% %>re</caption></table>

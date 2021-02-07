@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`div.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<div><% %></div>
+<div> <% %> </div>
+<div>e<% %>e</div>
+<div>e <% %> e</div>
+
+<div><div></div><% %><div></div></div>
+<div><div></div> <% %> <div></div></div>
+
+<div>
+  <% start %>
+    <% %>
+  <% middle %>
+    ew
+    <% %><% %>
+  <% end %>
+</div>
+
+<div><% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %></div>
+<div> <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> </div>
+<div>e<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>e</div>
+<div>e <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> e</div>
+
+=====================================output=====================================
+<div><% %></div>
+<div><% %></div>
+<div>e<% %>e</div>
+<div>e <% %> e</div>
+
+<div>
+  <div></div>
+  <% %>
+  <div></div>
+</div>
+<div>
+  <div></div>
+  <% %>
+  <div></div>
+</div>
+
+<div>
+  <% start %>
+    <% %>
+  <% middle %>
+    ew
+    <% %><% %>
+  <% end %>
+</div>
+
+<div>
+  <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+</div>
+<div>
+  <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+</div>
+<div>
+  e<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>e
+</div>
+<div>
+  e
+  <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+  e
+</div>
+
+================================================================================
+`;

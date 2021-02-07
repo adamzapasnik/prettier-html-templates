@@ -1,0 +1,13 @@
+<head>
+  <% %> <% %>
+<% start %>
+    <meta />
+<% %>
+      <% %>
+  <meta />
+<% middle %>
+    <meta />
+    <% %>
+<% end %>
+  <meta /> <% %>
+</head>

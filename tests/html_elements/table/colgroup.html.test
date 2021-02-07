@@ -1,0 +1,11 @@
+<table>
+  <colgroup>
+    <col>
+    <% start %>
+    <col span="2" class="batman">
+    <% middle %>
+    <col span="2" class="flash">
+    <% end %>
+    <% %>
+  </colgroup>
+</table>

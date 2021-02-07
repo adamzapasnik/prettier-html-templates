@@ -1,0 +1,495 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`caption.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <caption>
+   <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+  </caption>
+</table>
+
+<table><caption><% %></caption></table>
+<table><caption>re<% %>re</caption></table>
+
+=====================================output=====================================
+<table>
+  <caption>
+    <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+      43
+      <% %>
+    <% end %>
+  </caption>
+</table>
+
+<table>
+  <caption>
+    <% %>
+  </caption>
+</table>
+<table>
+  <caption>
+    re
+    <% %>
+    re
+  </caption>
+</table>
+
+================================================================================
+`;
+
+exports[`colgroup.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <colgroup>
+    <col>
+    <% start %>
+    <col span="2" class="batman">
+    <% middle %>
+    <col span="2" class="flash">
+    <% end %>
+    <% %>
+  </colgroup>
+</table>
+
+=====================================output=====================================
+<table>
+  <colgroup>
+    <col />
+    <% start %>
+      <col span="2" class="batman" />
+    <% middle %>
+      <col span="2" class="flash" />
+    <% end %>
+    <% %>
+  </colgroup>
+</table>
+
+================================================================================
+`;
+
+exports[`table.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+</table>
+
+<table><% %></table>
+
+=====================================output=====================================
+<table>
+  <% %>
+  <% start %>
+    <% %>
+  <% middle %>
+    43
+    <% %>
+  <% end %>
+</table>
+
+<table>
+  <% %>
+</table>
+
+================================================================================
+`;
+
+exports[`tbody.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tbody>
+   <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+  </tbody>
+</table>
+
+<table><tbody><% %></tbody></table>
+
+=====================================output=====================================
+<table>
+  <tbody>
+    <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+      43
+      <% %>
+    <% end %>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <% %>
+  </tbody>
+</table>
+
+================================================================================
+`;
+
+exports[`td.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tbody>
+   <tr><td><% %></td></tr>
+   <tr><td>ew<% %>ew</td></tr>
+   <tr><td>ew <% %> ew</td></tr>
+   <tr><td> <% %> </td></tr>
+
+    <tr><td><% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %></td></tr>
+  </tbody>
+</table>
+
+<table><tbody><tr><td><% %></td></tr></tbody></table>
+
+<table>
+  <tbody>
+   <tr><td><% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %></td></tr>
+   <tr><td>ew<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>ew</td></tr>
+   <tr><td>ew <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> ew</td></tr>
+   <tr><td> <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> </td></tr>
+
+    <tr><td><% start %>
+      <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+    <% middle %>
+        looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+    <% end %></td></tr>
+  </tbody>
+</table>
+
+<table><tbody><tr><td><% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %></td></tr></tbody></table>
+
+=====================================output=====================================
+<table>
+  <tbody>
+    <tr>
+      <td><% %></td>
+    </tr>
+    <tr>
+      <td>ew<% %>ew</td>
+    </tr>
+    <tr>
+      <td>ew <% %> ew</td>
+    </tr>
+    <tr>
+      <td><% %></td>
+    </tr>
+
+    <tr>
+      <td>
+        <% start %>
+          <% %>
+        <% middle %>
+          43
+          <% %>
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><% %></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ew<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>ew
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ew
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+        ew
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <% start %>
+          <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+        <% middle %>
+          looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong
+          <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+================================================================================
+`;
+
+exports[`tfoot.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tfoot>
+   <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+  </tfoot>
+</table>
+
+<table><tfoot><% %></tfoot></table>
+
+=====================================output=====================================
+<table>
+  <tfoot>
+    <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+      43
+      <% %>
+    <% end %>
+  </tfoot>
+</table>
+
+<table>
+  <tfoot>
+    <% %>
+  </tfoot>
+</table>
+
+================================================================================
+`;
+
+exports[`th.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <thead>
+   <tr><th><% %></th></tr>
+   <tr><th>ew<% %>ew</th></tr>
+   <tr><th>ew <% %> ew</th></tr>
+   <tr><th> <% %> </th></tr>
+
+    <tr><th><% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %></th></tr>
+  </thead>
+</table>
+
+<table><thead><tr><th><% %></th></tr></thead></table>
+
+=====================================output=====================================
+<table>
+  <thead>
+    <tr>
+      <th><% %></th>
+    </tr>
+    <tr>
+      <th>ew<% %>ew</th>
+    </tr>
+    <tr>
+      <th>ew <% %> ew</th>
+    </tr>
+    <tr>
+      <th><% %></th>
+    </tr>
+
+    <tr>
+      <th>
+        <% start %>
+          <% %>
+        <% middle %>
+          43
+          <% %>
+        <% end %>
+      </th>
+    </tr>
+  </thead>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><% %></th>
+    </tr>
+  </thead>
+</table>
+
+================================================================================
+`;
+
+exports[`thead.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <thead>
+   <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+  </thead>
+</table>
+
+<table><thead><% %></thead></table>
+
+=====================================output=====================================
+<table>
+  <thead>
+    <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+      43
+      <% %>
+    <% end %>
+  </thead>
+</table>
+
+<table>
+  <thead>
+    <% %>
+  </thead>
+</table>
+
+================================================================================
+`;
+
+exports[`tr.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tbody>
+   <tr><% %></tr>
+   <tr> <% %> </tr>
+
+    <tr><% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %></tr>
+  </tbody>
+</table>
+
+<table><tbody><tr><% %></tr></tbody></table>
+
+=====================================output=====================================
+<table>
+  <tbody>
+    <tr>
+      <% %>
+    </tr>
+    <tr>
+      <% %>
+    </tr>
+
+    <tr>
+      <% start %>
+        <% %>
+      <% middle %>
+        43
+        <% %>
+      <% end %>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <% %>
+    </tr>
+  </tbody>
+</table>
+
+================================================================================
+`;

@@ -1,0 +1,11 @@
+<table>
+  <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+</table>
+
+<table><% %></table>

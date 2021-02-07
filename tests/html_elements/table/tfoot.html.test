@@ -1,0 +1,13 @@
+<table>
+  <tfoot>
+   <% %>
+    <% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %>
+  </tfoot>
+</table>
+
+<table><tfoot><% %></tfoot></table>

@@ -1,0 +1,84 @@
+<div
+<% start %>
+    class="a"
+class="a"
+          <% middle %>
+          class="a"
+<% end %>
+></div>
+
+<div <% start %>class="a"<% middle %>class="a"<% end %>></div>
+<div <% start %> class="a"<% middle %>class="a" <% end %>></div>
+<div <% start %> class="a" <% middle %> class="a" <% end %> ></div>
+
+<div
+<% start %>
+    class="a"
+class="a"
+<% end %>
+></div>
+
+<div <% start %> class="a"<% end %> ></div>
+<div <% start %>class="a"<% end %>></div>
+
+<div
+<% start %>
+    class="a"
+    <% start %>
+    class="a"
+<% end %>
+class="a"
+          <% middle %>
+          class="a"
+          <% start %>
+    class="a"
+class="a"
+          <% middle %>
+          class="a"
+<% end %>
+<% end %>
+></div>
+
+<div>
+  <% start %>
+    a
+  <% middle %>
+a  
+  <% end %>
+    </div>
+
+    <div>
+     <% start %>
+    a
+     <% start %>
+    a
+  <% middle %>
+a  
+  <% end %>
+  <% middle %>
+   <% start %>
+    a
+  <% middle %>
+a  
+  <% end %>
+a  
+  <% end %>
+    </div>
+
+
+<li class="<% start %>a<% middle %>a<% end %>"></li>
+<li class="<% start %> a <% middle %> a <% end %>"></li>
+<li class="<% start %> a <% middle %> a<% end %> a"></li>
+<li class="<% start %> a <% middle %> a <% end %>a"></li>
+<li class="a <% start %> a <% middle %> a <% end %> a"></li>
+<li class="a<% start %>a<% middle %>a<% end %>a"></li>
+<li class="a <% start %>a<% middle %>a<% end %>a"></li>
+<li class="<% start %> a <% middle %><% end %>"></li>
+
+<li class="a<% start %>a<% end %>a"></li>
+<li class="a <% start %> a <% end %> a"></li>
+<li class="a <% start %> a <% end %>a"></li>
+<li class="a <% start %> a<% end %>a"></li>
+<li class="a <% start %> a<% end %> a"></li>
+<li class="a <% start %>a<% end %> a"></li>
+<li class="a<% start %> a<% end %>a"></li>

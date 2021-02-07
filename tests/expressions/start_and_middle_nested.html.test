@@ -1,0 +1,28 @@
+<div>
+   <% start_nested %>
+    <% middle_nested %>
+      ds
+    <% middle_nested %>
+      <div>ds</div>
+  <% end %>
+</div>
+<span>
+   <% start_nested %>
+    <% middle_nested %>
+      <% %>
+    <% middle_nested %>
+      <div>ds</div>
+    <% end %>
+
+</span>
+
+<div>
+   <% start_nested %>
+    <% middle_nested %>
+      ds
+    <% middle_nested %>
+      <div>
+      ds
+        </div>
+    <% end %>
+</div>

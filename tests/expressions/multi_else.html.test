@@ -1,0 +1,8 @@
+ <div>
+     <% start %>
+    a
+     <% middle %>
+    a
+  <% middle %>
+a
+  <% end %>

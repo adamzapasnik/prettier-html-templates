@@ -1,0 +1,17 @@
+<table>
+  <thead>
+   <tr><th><% %></th></tr>
+   <tr><th>ew<% %>ew</th></tr>
+   <tr><th>ew <% %> ew</th></tr>
+   <tr><th> <% %> </th></tr>
+
+    <tr><th><% start %>
+      <% %>
+    <% middle %>
+        43
+        <% %>
+    <% end %></th></tr>
+  </thead>
+</table>
+
+<table><thead><tr><th><% %></th></tr></thead></table>

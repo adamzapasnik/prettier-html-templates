@@ -1,0 +1,15 @@
+<script>
+  function m() {
+        obj = <% %>
+    return obj + <% %>
+  }
+
+  m(  <% %>)
+  ("<% %>")
+</script>
+
+<script>
+  console.log("<% %>", {
+    opts: {},
+  })
+</script>
