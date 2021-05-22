@@ -1,0 +1,464 @@
+yarn run v1.22.10
+$ jest tests/debug -u
+  console.log
+    htmlDoc {
+      "type": "concat",
+      "parts": [
+        {
+          "type": "group",
+          "contents": {
+            "type": "group",
+            "contents": {
+              "type": "group",
+              "contents": {
+                "type": "concat",
+                "parts": [
+                  {
+                    "type": "group",
+                    "contents": {
+                      "type": "concat",
+                      "parts": [
+                        {
+                          "type": "group",
+                          "contents": "<span",
+                          "break": false
+                        },
+                        {
+                          "type": "indent",
+                          "contents": {
+                            "type": "concat",
+                            "parts": [
+                              {
+                                "type": "line",
+                                "soft": true
+                              },
+                              {
+                                "type": "fill",
+                                "parts": [
+                                  ">a"
+                                ]
+                              },
+                              {
+                                "type": "group",
+                                "contents": {
+                                  "type": "concat",
+                                  "parts": [
+                                    {
+                                      "type": "line"
+                                    },
+                                    {
+                                      "type": "group",
+                                      "contents": {
+                                        "type": "concat",
+                                        "parts": [
+                                          {
+                                            "type": "group",
+                                            "contents": {
+                                              "type": "group",
+                                              "contents": "<eext1 ",
+                                              "break": false
+                                            },
+                                            "break": false
+                                          },
+                                          "/>"
+                                        ]
+                                      },
+                                      "break": false
+                                    }
+                                  ]
+                                },
+                                "break": false
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "line"
+                        }
+                      ]
+                    },
+                    "break": false
+                  },
+                  "</span>"
+                ]
+              },
+              "break": false
+            },
+            "break": false
+          },
+          "break": false
+        },
+        {
+          "type": "concat",
+          "parts": [
+            {
+              "type": "line",
+              "hard": true
+            },
+            {
+              "type": "break-parent"
+            }
+          ]
+        }
+      ]
+    }
+
+      at Object.embed (tests_config/test_plugin.js:24:11)
+
+  console.log
+    [
+      ">a"
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": {
+          "type": "group",
+          "contents": "<eext1 ",
+          "break": false
+        },
+        "break": false
+      },
+      "/>"
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "line"
+      },
+      {
+        "type": "group",
+        "contents": {
+          "type": "concat",
+          "parts": [
+            {
+              "type": "group",
+              "contents": {
+                "type": "group",
+                "contents": "<eext1 ",
+                "break": false
+              },
+              "break": false
+            },
+            "/>"
+          ]
+        },
+        "break": false
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "line",
+        "soft": true
+      },
+      {
+        "type": "fill",
+        "parts": [
+          ">a"
+        ]
+      },
+      {
+        "type": "group",
+        "contents": {
+          "type": "concat",
+          "parts": [
+            {
+              "type": "line"
+            },
+            {
+              "type": "group",
+              "contents": {
+                "type": "concat",
+                "parts": [
+                  {
+                    "type": "group",
+                    "contents": {
+                      "type": "group",
+                      "contents": "<eext1 ",
+                      "break": false
+                    },
+                    "break": false
+                  },
+                  "/>"
+                ]
+              },
+              "break": false
+            }
+          ]
+        },
+        "break": false
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": "<span",
+        "break": false
+      },
+      {
+        "type": "indent",
+        "contents": {
+          "type": "concat",
+          "parts": [
+            {
+              "type": "line",
+              "soft": true
+            },
+            {
+              "type": "fill",
+              "parts": [
+                ">a"
+              ]
+            },
+            {
+              "type": "group",
+              "contents": {
+                "type": "concat",
+                "parts": [
+                  {
+                    "type": "line"
+                  },
+                  {
+                    "type": "group",
+                    "contents": {
+                      "type": "concat",
+                      "parts": [
+                        {
+                          "type": "group",
+                          "contents": {
+                            "type": "group",
+                            "contents": "<eext1 ",
+                            "break": false
+                          },
+                          "break": false
+                        },
+                        "/>"
+                      ]
+                    },
+                    "break": false
+                  }
+                ]
+              },
+              "break": false
+            }
+          ]
+        }
+      },
+      {
+        "type": "line"
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": {
+          "type": "concat",
+          "parts": [
+            {
+              "type": "group",
+              "contents": "<span",
+              "break": false
+            },
+            {
+              "type": "indent",
+              "contents": {
+                "type": "concat",
+                "parts": [
+                  {
+                    "type": "line",
+                    "soft": true
+                  },
+                  {
+                    "type": "fill",
+                    "parts": [
+                      ">a"
+                    ]
+                  },
+                  {
+                    "type": "group",
+                    "contents": {
+                      "type": "concat",
+                      "parts": [
+                        {
+                          "type": "line"
+                        },
+                        {
+                          "type": "group",
+                          "contents": {
+                            "type": "concat",
+                            "parts": [
+                              {
+                                "type": "group",
+                                "contents": {
+                                  "type": "group",
+                                  "contents": "<eext1 ",
+                                  "break": false
+                                },
+                                "break": false
+                              },
+                              "/>"
+                            ]
+                          },
+                          "break": false
+                        }
+                      ]
+                    },
+                    "break": false
+                  }
+                ]
+              }
+            },
+            {
+              "type": "line"
+            }
+          ]
+        },
+        "break": false
+      },
+      "</span>"
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "line",
+        "hard": true
+      },
+      {
+        "type": "break-parent"
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": {
+          "type": "group",
+          "contents": {
+            "type": "group",
+            "contents": {
+              "type": "concat",
+              "parts": [
+                {
+                  "type": "group",
+                  "contents": {
+                    "type": "concat",
+                    "parts": [
+                      {
+                        "type": "group",
+                        "contents": "<span",
+                        "break": false
+                      },
+                      {
+                        "type": "indent",
+                        "contents": {
+                          "type": "concat",
+                          "parts": [
+                            {
+                              "type": "line",
+                              "soft": true
+                            },
+                            {
+                              "type": "fill",
+                              "parts": [
+                                ">a"
+                              ]
+                            },
+                            {
+                              "type": "group",
+                              "contents": {
+                                "type": "concat",
+                                "parts": [
+                                  {
+                                    "type": "line"
+                                  },
+                                  {
+                                    "type": "group",
+                                    "contents": {
+                                      "type": "concat",
+                                      "parts": [
+                                        {
+                                          "type": "group",
+                                          "contents": {
+                                            "type": "group",
+                                            "contents": "<eext1 ",
+                                            "break": false
+                                          },
+                                          "break": false
+                                        },
+                                        "/>"
+                                      ]
+                                    },
+                                    "break": false
+                                  }
+                                ]
+                              },
+                              "break": false
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "line"
+                      }
+                    ]
+                  },
+                  "break": false
+                },
+                "</span>"
+              ]
+            },
+            "break": false
+          },
+          "break": false
+        },
+        "break": false
+      },
+      {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      }
+    ]
+
+      at lib/decoder.js:20:13
+
+Done in 1.35s.

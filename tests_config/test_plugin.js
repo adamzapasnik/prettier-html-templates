@@ -1,6 +1,7 @@
 const { encodeExpressions, decodeExpressions, tokenizeHTML } = require('../lib/index');
 const { mapDoc } = require('prettier').doc.utils;
 const prettier = require('prettier');
+const parserr = require('angular-html-parser');
 
 // args: path, print, textToDoc, options
 function embed(path, _print, textToDoc, options) {
@@ -13,12 +14,18 @@ function embed(path, _print, textToDoc, options) {
   }
 
   const [text, expressionMap] = encodeExpressions(tokens);
-
+  // prettier.__debug.formatAST(parsed.ast, { parser: 'html', astFormat: 'html', originalText: parsed.text})
+  // console.log(JSON.stringify(parserr.parse(text, { canSelfClose: true }), null, 2));
+  // return prettier.__debug.formatAST(parserr.parse(text, { canSelfClose: true }), { ...options, parser: 'html' });
+  // prettier.__debug.parse(text, { parser: 'html'  })
+  // > prettier.__debug.formatAST(b.ast, { parser: 'html'})
+  // return parserr.parse(text, { canSelfClose: true });
   const htmlDoc = textToDoc(text, { parser: 'html' });
-
+  console.log('htmlDoc', JSON.stringify(htmlDoc, null, 2));
   const callback = decodeExpressions(expressionMap);
 
-  return mapDoc(htmlDoc, callback);
+  const s = mapDoc(htmlDoc, callback);
+  return s;
 }
 
 const printers = {
@@ -70,3 +77,5 @@ module.exports = {
     },
   ],
 };
+
+// > prettier.__debug.formatAST(parsed.ast, { parser: 'html', astFormat: 'html', originalText: parsed.text})

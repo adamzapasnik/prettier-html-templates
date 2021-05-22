@@ -1,0 +1,1223 @@
+yarn run v1.22.10
+$ jest tests/debug -u
+  console.log
+    htmlDoc [
+      {
+        "type": "group",
+        "contents": [
+          [
+            {
+              "type": "group",
+              "contents": [
+                {
+                  "type": "group",
+                  "contents": [
+                    [
+                      {
+                        "type": "group",
+                        "contents": [
+                          {
+                            "type": "group",
+                            "contents": [
+                              [
+                                "",
+                                "<label"
+                              ],
+                              "",
+                              ""
+                            ],
+                            "break": false
+                          },
+                          [
+                            "",
+                            {
+                              "type": "indent",
+                              "contents": [
+                                {
+                                  "type": "line",
+                                  "soft": true
+                                },
+                                [
+                                  {
+                                    "type": "fill",
+                                    "parts": [
+                                      ">Post",
+                                      {
+                                        "type": "line"
+                                      },
+                                      "to",
+                                      {
+                                        "type": "line"
+                                      },
+                                      "Changelog",
+                                      {
+                                        "type": "line"
+                                      },
+                                      "News"
+                                    ]
+                                  },
+                                  [
+                                    {
+                                      "type": "group",
+                                      "contents": [
+                                        {
+                                          "type": "line"
+                                        },
+                                        {
+                                          "type": "group",
+                                          "contents": [
+                                            [
+                                              {
+                                                "type": "group",
+                                                "contents": [
+                                                  {
+                                                    "type": "group",
+                                                    "contents": [
+                                                      [
+                                                        "",
+                                                        "<eext1"
+                                                      ],
+                                                      " ",
+                                                      ""
+                                                    ],
+                                                    "break": false
+                                                  },
+                                                  ""
+                                                ],
+                                                "break": false
+                                              },
+                                              [
+                                                "",
+                                                [
+                                                  "/>",
+                                                  ""
+                                                ]
+                                              ]
+                                            ]
+                                          ],
+                                          "break": false
+                                        }
+                                      ],
+                                      "break": false
+                                    }
+                                  ]
+                                ]
+                              ]
+                            },
+                            {
+                              "type": "line"
+                            }
+                          ]
+                        ],
+                        "break": false
+                      },
+                      [
+                        [
+                          "",
+                          "</label"
+                        ],
+                        [
+                          ">",
+                          ""
+                        ]
+                      ]
+                    ]
+                  ],
+                  "break": false
+                }
+              ],
+              "break": false
+            }
+          ]
+        ],
+        "break": false
+      },
+      {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      }
+    ]
+
+      at Object.embed (tests_config/test_plugin.js:24:11)
+
+  console.log
+    [
+      "",
+      "<label"
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      [
+        "",
+        "<label"
+      ],
+      "",
+      ""
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      ">Post",
+      {
+        "type": "line"
+      },
+      "to",
+      {
+        "type": "line"
+      },
+      "Changelog",
+      {
+        "type": "line"
+      },
+      "News"
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      "",
+      "<eext1"
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      [
+        "",
+        "<eext1"
+      ],
+      " ",
+      ""
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          [
+            "",
+            "<eext1"
+          ],
+          " ",
+          ""
+        ],
+        "break": false
+      },
+      ""
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      "/>",
+      ""
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      "",
+      [
+        "/>",
+        ""
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          {
+            "type": "group",
+            "contents": [
+              [
+                "",
+                "<eext1"
+              ],
+              " ",
+              ""
+            ],
+            "break": false
+          },
+          ""
+        ],
+        "break": false
+      },
+      [
+        "",
+        [
+          "/>",
+          ""
+        ]
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      [
+        {
+          "type": "group",
+          "contents": [
+            {
+              "type": "group",
+              "contents": [
+                [
+                  "",
+                  "<eext1"
+                ],
+                " ",
+                ""
+              ],
+              "break": false
+            },
+            ""
+          ],
+          "break": false
+        },
+        [
+          "",
+          [
+            "/>",
+            ""
+          ]
+        ]
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "line"
+      },
+      {
+        "type": "group",
+        "contents": [
+          [
+            {
+              "type": "group",
+              "contents": [
+                {
+                  "type": "group",
+                  "contents": [
+                    [
+                      "",
+                      "<eext1"
+                    ],
+                    " ",
+                    ""
+                  ],
+                  "break": false
+                },
+                ""
+              ],
+              "break": false
+            },
+            [
+              "",
+              [
+                "/>",
+                ""
+              ]
+            ]
+          ]
+        ],
+        "break": false
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    passed
+
+      at isSelfClosingInText (lib/decoder/html_body_decoder.js:46:11)
+          at Array.map (<anonymous>)
+
+  console.log
+    <eext1
+
+      at isSelfClosingInText (lib/decoder/html_body_decoder.js:49:11)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      { type: 'line' },
+      '<%= help_icon("Disable to publish to audio feed only.") %>'
+    ]
+
+      at decodeSelfClosingInText (lib/decoder/html_body_decoder.js:93:11)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          {
+            "type": "line"
+          },
+          "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+        ],
+        "break": false
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "fill",
+        "parts": [
+          ">Post",
+          {
+            "type": "line"
+          },
+          "to",
+          {
+            "type": "line"
+          },
+          "Changelog",
+          {
+            "type": "line"
+          },
+          "News"
+        ]
+      },
+      [
+        {
+          "type": "group",
+          "contents": [
+            {
+              "type": "line"
+            },
+            "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+          ],
+          "break": false
+        }
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "line",
+        "soft": true
+      },
+      [
+        {
+          "type": "fill",
+          "parts": [
+            ">Post",
+            {
+              "type": "line"
+            },
+            "to",
+            {
+              "type": "line"
+            },
+            "Changelog",
+            {
+              "type": "line"
+            },
+            "News"
+          ]
+        },
+        [
+          {
+            "type": "group",
+            "contents": [
+              {
+                "type": "line"
+              },
+              "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+            ],
+            "break": false
+          }
+        ]
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      "",
+      {
+        "type": "indent",
+        "contents": [
+          {
+            "type": "line",
+            "soft": true
+          },
+          [
+            {
+              "type": "fill",
+              "parts": [
+                ">Post",
+                {
+                  "type": "line"
+                },
+                "to",
+                {
+                  "type": "line"
+                },
+                "Changelog",
+                {
+                  "type": "line"
+                },
+                "News"
+              ]
+            },
+            [
+              {
+                "type": "group",
+                "contents": [
+                  {
+                    "type": "line"
+                  },
+                  "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                ],
+                "break": false
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "line"
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          [
+            "",
+            "<label"
+          ],
+          "",
+          ""
+        ],
+        "break": false
+      },
+      [
+        "",
+        {
+          "type": "indent",
+          "contents": [
+            {
+              "type": "line",
+              "soft": true
+            },
+            [
+              {
+                "type": "fill",
+                "parts": [
+                  ">Post",
+                  {
+                    "type": "line"
+                  },
+                  "to",
+                  {
+                    "type": "line"
+                  },
+                  "Changelog",
+                  {
+                    "type": "line"
+                  },
+                  "News"
+                ]
+              },
+              [
+                {
+                  "type": "group",
+                  "contents": [
+                    {
+                      "type": "line"
+                    },
+                    "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                  ],
+                  "break": false
+                }
+              ]
+            ]
+          ]
+        },
+        {
+          "type": "line"
+        }
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      "",
+      "</label"
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      ">",
+      ""
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      [
+        "",
+        "</label"
+      ],
+      [
+        ">",
+        ""
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          {
+            "type": "group",
+            "contents": [
+              [
+                "",
+                "<label"
+              ],
+              "",
+              ""
+            ],
+            "break": false
+          },
+          [
+            "",
+            {
+              "type": "indent",
+              "contents": [
+                {
+                  "type": "line",
+                  "soft": true
+                },
+                [
+                  {
+                    "type": "fill",
+                    "parts": [
+                      ">Post",
+                      {
+                        "type": "line"
+                      },
+                      "to",
+                      {
+                        "type": "line"
+                      },
+                      "Changelog",
+                      {
+                        "type": "line"
+                      },
+                      "News"
+                    ]
+                  },
+                  [
+                    {
+                      "type": "group",
+                      "contents": [
+                        {
+                          "type": "line"
+                        },
+                        "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                      ],
+                      "break": false
+                    }
+                  ]
+                ]
+              ]
+            },
+            {
+              "type": "line"
+            }
+          ]
+        ],
+        "break": false
+      },
+      [
+        [
+          "",
+          "</label"
+        ],
+        [
+          ">",
+          ""
+        ]
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      [
+        {
+          "type": "group",
+          "contents": [
+            {
+              "type": "group",
+              "contents": [
+                [
+                  "",
+                  "<label"
+                ],
+                "",
+                ""
+              ],
+              "break": false
+            },
+            [
+              "",
+              {
+                "type": "indent",
+                "contents": [
+                  {
+                    "type": "line",
+                    "soft": true
+                  },
+                  [
+                    {
+                      "type": "fill",
+                      "parts": [
+                        ">Post",
+                        {
+                          "type": "line"
+                        },
+                        "to",
+                        {
+                          "type": "line"
+                        },
+                        "Changelog",
+                        {
+                          "type": "line"
+                        },
+                        "News"
+                      ]
+                    },
+                    [
+                      {
+                        "type": "group",
+                        "contents": [
+                          {
+                            "type": "line"
+                          },
+                          "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                        ],
+                        "break": false
+                      }
+                    ]
+                  ]
+                ]
+              },
+              {
+                "type": "line"
+              }
+            ]
+          ],
+          "break": false
+        },
+        [
+          [
+            "",
+            "</label"
+          ],
+          [
+            ">",
+            ""
+          ]
+        ]
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          [
+            {
+              "type": "group",
+              "contents": [
+                {
+                  "type": "group",
+                  "contents": [
+                    [
+                      "",
+                      "<label"
+                    ],
+                    "",
+                    ""
+                  ],
+                  "break": false
+                },
+                [
+                  "",
+                  {
+                    "type": "indent",
+                    "contents": [
+                      {
+                        "type": "line",
+                        "soft": true
+                      },
+                      [
+                        {
+                          "type": "fill",
+                          "parts": [
+                            ">Post",
+                            {
+                              "type": "line"
+                            },
+                            "to",
+                            {
+                              "type": "line"
+                            },
+                            "Changelog",
+                            {
+                              "type": "line"
+                            },
+                            "News"
+                          ]
+                        },
+                        [
+                          {
+                            "type": "group",
+                            "contents": [
+                              {
+                                "type": "line"
+                              },
+                              "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                            ],
+                            "break": false
+                          }
+                        ]
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "line"
+                  }
+                ]
+              ],
+              "break": false
+            },
+            [
+              [
+                "",
+                "</label"
+              ],
+              [
+                ">",
+                ""
+              ]
+            ]
+          ]
+        ],
+        "break": false
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          {
+            "type": "group",
+            "contents": [
+              [
+                {
+                  "type": "group",
+                  "contents": [
+                    {
+                      "type": "group",
+                      "contents": [
+                        [
+                          "",
+                          "<label"
+                        ],
+                        "",
+                        ""
+                      ],
+                      "break": false
+                    },
+                    [
+                      "",
+                      {
+                        "type": "indent",
+                        "contents": [
+                          {
+                            "type": "line",
+                            "soft": true
+                          },
+                          [
+                            {
+                              "type": "fill",
+                              "parts": [
+                                ">Post",
+                                {
+                                  "type": "line"
+                                },
+                                "to",
+                                {
+                                  "type": "line"
+                                },
+                                "Changelog",
+                                {
+                                  "type": "line"
+                                },
+                                "News"
+                              ]
+                            },
+                            [
+                              {
+                                "type": "group",
+                                "contents": [
+                                  {
+                                    "type": "line"
+                                  },
+                                  "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                                ],
+                                "break": false
+                              }
+                            ]
+                          ]
+                        ]
+                      },
+                      {
+                        "type": "line"
+                      }
+                    ]
+                  ],
+                  "break": false
+                },
+                [
+                  [
+                    "",
+                    "</label"
+                  ],
+                  [
+                    ">",
+                    ""
+                  ]
+                ]
+              ]
+            ],
+            "break": false
+          }
+        ],
+        "break": false
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      [
+        {
+          "type": "group",
+          "contents": [
+            {
+              "type": "group",
+              "contents": [
+                [
+                  {
+                    "type": "group",
+                    "contents": [
+                      {
+                        "type": "group",
+                        "contents": [
+                          [
+                            "",
+                            "<label"
+                          ],
+                          "",
+                          ""
+                        ],
+                        "break": false
+                      },
+                      [
+                        "",
+                        {
+                          "type": "indent",
+                          "contents": [
+                            {
+                              "type": "line",
+                              "soft": true
+                            },
+                            [
+                              {
+                                "type": "fill",
+                                "parts": [
+                                  ">Post",
+                                  {
+                                    "type": "line"
+                                  },
+                                  "to",
+                                  {
+                                    "type": "line"
+                                  },
+                                  "Changelog",
+                                  {
+                                    "type": "line"
+                                  },
+                                  "News"
+                                ]
+                              },
+                              [
+                                {
+                                  "type": "group",
+                                  "contents": [
+                                    {
+                                      "type": "line"
+                                    },
+                                    "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                                  ],
+                                  "break": false
+                                }
+                              ]
+                            ]
+                          ]
+                        },
+                        {
+                          "type": "line"
+                        }
+                      ]
+                    ],
+                    "break": false
+                  },
+                  [
+                    [
+                      "",
+                      "</label"
+                    ],
+                    [
+                      ">",
+                      ""
+                    ]
+                  ]
+                ]
+              ],
+              "break": false
+            }
+          ],
+          "break": false
+        }
+      ]
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "line",
+        "hard": true
+      },
+      {
+        "type": "break-parent"
+      }
+    ]
+
+      at lib/decoder.js:20:13
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": [
+          [
+            {
+              "type": "group",
+              "contents": [
+                {
+                  "type": "group",
+                  "contents": [
+                    [
+                      {
+                        "type": "group",
+                        "contents": [
+                          {
+                            "type": "group",
+                            "contents": [
+                              [
+                                "",
+                                "<label"
+                              ],
+                              "",
+                              ""
+                            ],
+                            "break": false
+                          },
+                          [
+                            "",
+                            {
+                              "type": "indent",
+                              "contents": [
+                                {
+                                  "type": "line",
+                                  "soft": true
+                                },
+                                [
+                                  {
+                                    "type": "fill",
+                                    "parts": [
+                                      ">Post",
+                                      {
+                                        "type": "line"
+                                      },
+                                      "to",
+                                      {
+                                        "type": "line"
+                                      },
+                                      "Changelog",
+                                      {
+                                        "type": "line"
+                                      },
+                                      "News"
+                                    ]
+                                  },
+                                  [
+                                    {
+                                      "type": "group",
+                                      "contents": [
+                                        {
+                                          "type": "line"
+                                        },
+                                        "<%= help_icon(\"Disable to publish to audio feed only.\") %>"
+                                      ],
+                                      "break": false
+                                    }
+                                  ]
+                                ]
+                              ]
+                            },
+                            {
+                              "type": "line"
+                            }
+                          ]
+                        ],
+                        "break": false
+                      },
+                      [
+                        [
+                          "",
+                          "</label"
+                        ],
+                        [
+                          ">",
+                          ""
+                        ]
+                      ]
+                    ]
+                  ],
+                  "break": false
+                }
+              ],
+              "break": false
+            }
+          ]
+        ],
+        "break": false
+      },
+      {
+        "type": "concat",
+        "parts": [
+          {
+            "type": "line",
+            "hard": true
+          },
+          {
+            "type": "break-parent"
+          }
+        ]
+      }
+    ]
+
+      at lib/decoder.js:20:13
+
+Done in 1.61s.

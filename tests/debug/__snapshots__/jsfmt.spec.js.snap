@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`s.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<label>Post to Changelog News <%= help_icon("Disable to publish to audio feed only.") %></label>
+
+=====================================output=====================================
+<label
+  >Post to Changelog News
+  <%= help_icon("Disable to publish to audio feed only.") %>
+</label>
+
+================================================================================
+`;

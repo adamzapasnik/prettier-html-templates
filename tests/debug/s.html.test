@@ -1,0 +1,1 @@
+<label>Post to Changelog News <%= help_icon("Disable to publish to audio feed only.") %></label>
