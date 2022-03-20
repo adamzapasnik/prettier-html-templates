@@ -41,6 +41,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-jest": "^27.0.2",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
@@ -49,9 +52,16 @@
     "jest": "^26.6.3",
     "jest-snapshot-serializer-raw": "^1.1.0",
     "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
+    "prettier": "2.3.0"
   },
   "peerDependencies": {
-    "prettier": "^2.0.0"
+    "prettier": "2.3.0"
+  },
+  "dependencies": {
+    "angular-html-parser": "1.8.0",
+    "html-element-attributes": "2.3.0",
+    "html-styles": "1.0.0",
+    "html-tag-names": "1.1.5",
+    "parse-srcset": "ikatyang/parse-srcset#54eb9c1cb21db5c62b4d0e275d7249516df6f0ee"
   }
 }

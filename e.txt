@@ -1,0 +1,113 @@
+yarn run v1.22.10
+$ jest -u tests/debug
+  console.log
+    [
+      {
+        "type": "group",
+        "contents": {
+          "type": "group",
+          "contents": [
+            {
+              "type": "group",
+              "contents": "<eex>",
+              "break": false
+            },
+            "const",
+            {
+              "type": "line"
+            },
+            "a",
+            {
+              "type": "line"
+            },
+            "=",
+            {
+              "type": "line"
+            },
+            "eexs1eexs</eex>"
+          ],
+          "break": false
+        },
+        "break": false,
+        "expandedStates": [
+          {
+            "type": "group",
+            "contents": [
+              {
+                "type": "group",
+                "contents": "<eex>",
+                "break": false
+              },
+              "const",
+              {
+                "type": "line"
+              },
+              "a",
+              {
+                "type": "line"
+              },
+              "=",
+              {
+                "type": "line"
+              },
+              "eexs1eexs</eex>"
+            ],
+            "break": false
+          },
+          {
+            "type": "group",
+            "contents": [
+              {
+                "type": "group",
+                "contents": "<eex>",
+                "break": false
+              },
+              {
+                "type": "indent",
+                "contents": [
+                  {
+                    "type": "line",
+                    "hard": true
+                  },
+                  {
+                    "type": "break-parent"
+                  },
+                  {
+                    "type": "fill",
+                    "parts": [
+                      "const",
+                      {
+                        "type": "line"
+                      },
+                      "a",
+                      {
+                        "type": "line"
+                      },
+                      "=",
+                      {
+                        "type": "line"
+                      },
+                      "eexs1eexs"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "line",
+                "hard": true
+              },
+              {
+                "type": "break-parent"
+              },
+              "</eex>"
+            ],
+            "break": "propagated"
+          }
+        ]
+      },
+      ";"
+    ]
+
+      at Object.embed (lib/printer.js:121:19)
+
+Done in 2.19s.

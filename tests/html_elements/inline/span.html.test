@@ -5,6 +5,7 @@
 <span> <% %></span>
 <span>a <% %> a</span>
 <span>a<% %></span>
+<span><% %>a</span>
 <span> <% %> a</span>
 <span>a<% %> </span>
 <span> a<% %>a </span>

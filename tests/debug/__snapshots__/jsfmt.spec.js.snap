@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`s.html.test 1`] = `
+====================================options=====================================
+parsers: ["test"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+  <span class="e"><%
+      
+
+    plaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeen
+    %></span>
+=====================================output=====================================
+<span class="e"><%
+  plaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeenplaieeen
+%></span>
+
+================================================================================
+`;

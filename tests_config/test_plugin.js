@@ -1,59 +1,33 @@
-const { encodeExpressions, decodeExpressions, tokenizeHTML } = require('../lib/index');
 const { mapDoc } = require('prettier').doc.utils;
 const prettier = require('prettier');
 
-// args: path, print, textToDoc, options
-function embed(path, _print, textToDoc, options) {
-  const tokens = path.stack[0];
+const preprocess = require("../lib/print-preprocess");
 
-  const isTextWithExpressions = tokens.find((token) => token.type !== 'text');
+const { parsers: { html: htmlParser } } = require('../lib/parser')
+const { print: printHTML, embed: embedHTML} = require('../lib/printer')
 
-  if (!isTextWithExpressions) {
-    return prettier.format(options.originalText, { ...options, parser: 'html' });
-  }
-
-  const [text, expressionMap] = encodeExpressions(tokens);
-
-  const htmlDoc = textToDoc(text, { parser: 'html' });
-
-  const callback = decodeExpressions(expressionMap);
-
-  return mapDoc(htmlDoc, callback);
-}
-
+const clean = require('../lib/clean')
 const printers = {
   'test-ast': {
-    embed: embed,
+    embed: embedHTML,
+    print: (...args) => {
+      const b = printHTML(...args)
+      // console.log(JSON.stringify(b, null, 2))
+      return b
+    },
+    preprocess,
+    massageAstNode: clean,
+
   },
 };
 
-function parse(text, _parsers, _options) {
-  return tokenizeHTML(text, /<%[\s\S]*?%>/gm, (expression) => {
-    let type;
-    let subType;
-
-    if (/<% start %>/.test(expression)) {
-      type = 'start';
-    } else if (/<% end %>/.test(expression)) {
-      type = 'end';
-    } else if (/<% middle %>/.test(expression)) {
-      type = 'middle';
-    } else if (/<% start_nested %>/.test(expression)) {
-      type = 'start';
-      subType = 'nested';
-    } else if (/<% middle_nested %>/.test(expression)) {
-      type = 'middle_nested';
-    } else {
-      type = 'plain';
-    }
-
-    return { type, subType };
-  });
-}
+const { locStart, locEnd } = require("../lib/loc");
 
 const parser = {
-  parse,
+  parse: htmlParser.parse,
   astFormat: 'test-ast',
+  locEnd,
+  locStart
 };
 
 module.exports = {

@@ -1,0 +1,6 @@
+hasHtmComponentClosingTag comment out this shit
+https://github.com/developit/htm
+
+
+- ignore scripts or make sure they work with plain expressions
+- ignore scripts with nested expressions

@@ -1,0 +1,582 @@
+yarn run v1.22.10
+$ jest tests/debug -u
+  console.log
+    tt
+
+      at encodeExpressions (lib/encoder.js:10:11)
+
+  console.log
+    tokens [
+      { type: 'text', content: '<div\n' },
+      {
+        type: 'start',
+        subType: undefined,
+        content: '<% start %>',
+        afterWhitespace: true,
+        beforeWhitespace: true,
+        beforeInlineEndTag: false,
+        afterInlineEndTag: false,
+        inElement: true,
+        inScript: false,
+        inComment: false,
+        inElementWithoutNeedToEncode: false
+      },
+      { type: 'text', content: '\n    class="a"\nclass="a"\n          ' },
+      {
+        type: 'middle',
+        subType: undefined,
+        content: '<% middle %>',
+        afterWhitespace: true,
+        beforeWhitespace: true,
+        beforeInlineEndTag: false,
+        afterInlineEndTag: false,
+        inElement: true,
+        inScript: false,
+        inComment: false,
+        inElementWithoutNeedToEncode: false
+      },
+      { type: 'text', content: '\n          class="a"\n' },
+      {
+        type: 'end',
+        subType: undefined,
+        content: '<% end %>',
+        afterWhitespace: true,
+        beforeWhitespace: true,
+        beforeInlineEndTag: false,
+        afterInlineEndTag: false,
+        inElement: true,
+        inScript: false,
+        inComment: false,
+        inElementWithoutNeedToEncode: false
+      },
+      { type: 'text', content: '\n></div>\n' }
+    ]
+
+      at encodeExpressions (lib/encoder.js:11:11)
+
+  console.log
+    etr Node {
+      name: 'eext1eexts',
+      value: null,
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 6,
+          line: 1,
+          col: 1
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 16,
+          line: 1,
+          col: 11
+        },
+        details: null
+      },
+      valueSpan: null,
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 6,
+          line: 1,
+          col: 1
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 16,
+          line: 1,
+          col: 11
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'attribute',
+      namespace: null,
+      hasExplicitNamespace: false
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+  console.log
+    etr Node {
+      name: 'class',
+      value: 'a',
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 22,
+          line: 2,
+          col: 4
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 31,
+          line: 2,
+          col: 13
+        },
+        details: null
+      },
+      valueSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 28,
+          line: 2,
+          col: 10
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 31,
+          line: 2,
+          col: 13
+        },
+        details: null
+      },
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 22,
+          line: 2,
+          col: 4
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 27,
+          line: 2,
+          col: 9
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'attribute',
+      namespace: null,
+      hasExplicitNamespace: false
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+  console.log
+    etr Node {
+      name: 'class',
+      value: 'a',
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 32,
+          line: 3,
+          col: 0
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 41,
+          line: 3,
+          col: 9
+        },
+        details: null
+      },
+      valueSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 38,
+          line: 3,
+          col: 6
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 41,
+          line: 3,
+          col: 9
+        },
+        details: null
+      },
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 32,
+          line: 3,
+          col: 0
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 37,
+          line: 3,
+          col: 5
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'attribute',
+      namespace: null,
+      hasExplicitNamespace: false
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+  console.log
+    etr Node {
+      name: 'eext1eexte',
+      value: null,
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 53,
+          line: 4,
+          col: 11
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 63,
+          line: 4,
+          col: 21
+        },
+        details: null
+      },
+      valueSpan: null,
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 53,
+          line: 4,
+          col: 11
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 63,
+          line: 4,
+          col: 21
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'attribute',
+      namespace: null,
+      hasExplicitNamespace: false
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+  console.log
+    etr Node {
+      name: 'eext2eexts',
+      value: null,
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 64,
+          line: 4,
+          col: 22
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 74,
+          line: 4,
+          col: 32
+        },
+        details: null
+      },
+      valueSpan: null,
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 64,
+          line: 4,
+          col: 22
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 74,
+          line: 4,
+          col: 32
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'attribute',
+      namespace: null,
+      hasExplicitNamespace: false
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+  console.log
+    etr Node {
+      name: 'class',
+      value: 'a',
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 86,
+          line: 5,
+          col: 10
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 95,
+          line: 5,
+          col: 19
+        },
+        details: null
+      },
+      valueSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 92,
+          line: 5,
+          col: 16
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 95,
+          line: 5,
+          col: 19
+        },
+        details: null
+      },
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 86,
+          line: 5,
+          col: 10
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 91,
+          line: 5,
+          col: 15
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'attribute',
+      namespace: null,
+      hasExplicitNamespace: false
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+  console.log
+    etr Node {
+      name: 'eext2eexte',
+      value: null,
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 97,
+          line: 6,
+          col: 1
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 107,
+          line: 6,
+          col: 11
+        },
+        details: null
+      },
+      valueSpan: null,
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 97,
+          line: 6,
+          col: 1
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 107,
+          line: 6,
+          col: 11
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'attribute',
+      namespace: null,
+      hasExplicitNamespace: false
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+  console.log
+    tokes undefined
+
+      at lib/print-preprocess.js:53:17
+          at Array.map (<anonymous>)
+
+  console.log
+    etr Node {
+      attrs: [
+        Node {
+          name: 'eext1eexts',
+          value: null,
+          sourceSpan: [ParseSourceSpan],
+          valueSpan: null,
+          nameSpan: [ParseSourceSpan],
+          i18n: null,
+          type: 'attribute',
+          namespace: null,
+          hasExplicitNamespace: false,
+          subType: 'start',
+          printExpression: '<% start %>'
+        },
+        Node {
+          name: 'class',
+          value: 'a',
+          sourceSpan: [ParseSourceSpan],
+          valueSpan: [ParseSourceSpan],
+          nameSpan: [ParseSourceSpan],
+          i18n: null,
+          type: 'attribute',
+          namespace: null,
+          hasExplicitNamespace: false
+        },
+        Node {
+          name: 'class',
+          value: 'a',
+          sourceSpan: [ParseSourceSpan],
+          valueSpan: [ParseSourceSpan],
+          nameSpan: [ParseSourceSpan],
+          i18n: null,
+          type: 'attribute',
+          namespace: null,
+          hasExplicitNamespace: false
+        },
+        Node {
+          name: 'eext1eexte',
+          value: null,
+          sourceSpan: [ParseSourceSpan],
+          valueSpan: null,
+          nameSpan: [ParseSourceSpan],
+          i18n: null,
+          type: 'attribute',
+          namespace: null,
+          hasExplicitNamespace: false,
+          subType: 'middle',
+          printExpression: ''
+        },
+        Node {
+          name: 'eext2eexts',
+          value: null,
+          sourceSpan: [ParseSourceSpan],
+          valueSpan: null,
+          nameSpan: [ParseSourceSpan],
+          i18n: null,
+          type: 'attribute',
+          namespace: null,
+          hasExplicitNamespace: false,
+          subType: 'middle',
+          printExpression: '<% middle %>'
+        },
+        Node {
+          name: 'class',
+          value: 'a',
+          sourceSpan: [ParseSourceSpan],
+          valueSpan: [ParseSourceSpan],
+          nameSpan: [ParseSourceSpan],
+          i18n: null,
+          type: 'attribute',
+          namespace: null,
+          hasExplicitNamespace: false
+        },
+        Node {
+          name: 'eext2eexte',
+          value: null,
+          sourceSpan: [ParseSourceSpan],
+          valueSpan: null,
+          nameSpan: [ParseSourceSpan],
+          i18n: null,
+          type: 'attribute',
+          namespace: null,
+          hasExplicitNamespace: false,
+          subType: 'end',
+          printExpression: '<% end %>'
+        }
+      ],
+      children: [],
+      name: 'div',
+      sourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 0,
+          line: 0,
+          col: 0
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 116,
+          line: 7,
+          col: 7
+        },
+        details: null
+      },
+      startSourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 0,
+          line: 0,
+          col: 0
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 110,
+          line: 7,
+          col: 1
+        },
+        details: null
+      },
+      endSourceSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 110,
+          line: 7,
+          col: 1
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 116,
+          line: 7,
+          col: 7
+        },
+        details: null
+      },
+      nameSpan: ParseSourceSpan {
+        start: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 1,
+          line: 0,
+          col: 1
+        },
+        end: ParseLocation {
+          file: [ParseSourceFile],
+          offset: 4,
+          line: 0,
+          col: 4
+        },
+        details: null
+      },
+      i18n: null,
+      type: 'element',
+      namespace: null,
+      hasExplicitNamespace: false,
+      tagDefinition: HtmlTagDefinition {
+        closedByChildren: {},
+        closedByParent: false,
+        canSelfClose: false,
+        isVoid: false,
+        implicitNamespacePrefix: null,
+        contentType: 2,
+        ignoreFirstLf: false
+      }
+    }
+
+      at lib/print-preprocess.js:64:17
+          at Array.map (<anonymous>)
+
+Done in 2.33s.
