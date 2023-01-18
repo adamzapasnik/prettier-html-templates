@@ -1,4 +1,4 @@
-import { tokenizeHTML } from '../lib';
+import { tokenizeHTML } from '../src';
 
 test('throws an error when type incorrect', () => {
   expect(() =>

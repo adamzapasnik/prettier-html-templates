@@ -1,4 +1,4 @@
-const encodeExpressions = (tokens) => {
+export const encodeExpressions = (tokens) => {
   const expressionMap = new Map();
   // TODO: betterNames
   const open = [];
@@ -138,5 +138,3 @@ const encodeExpressions = (tokens) => {
 
   return [textWithPlaceholders, expressionMap];
 };
-
-export default encodeExpressions;

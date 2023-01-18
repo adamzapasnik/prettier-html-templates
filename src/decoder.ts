@@ -4,7 +4,7 @@ import { isInElement, decodeInAttributes } from './decoder/attributes_decoder';
 import { isInTableOrHead, decodeInTableOrHead } from './decoder/table_and_head_decoder';
 import { isSelfClosingInText, decodeSelfClosingInText, isSelfClosingAfterOpenTag } from './decoder/html_body_decoder';
 
-const decodeExpressions = (expressionMap) => {
+export const decodeExpressions = (expressionMap) => {
   const opts = { removeWhitespace: false };
   const scriptTagExpressions = [];
 
@@ -190,5 +190,3 @@ const decodeExpressions = (expressionMap) => {
     return Object.assign({}, doc, { parts: decodedParts });
   };
 };
-
-export default decodeExpressions;

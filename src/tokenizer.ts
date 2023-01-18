@@ -33,7 +33,7 @@ const validateTypes = (type, subType) => {
   }
 };
 
-const tokenizeHTML = (text, expressionRegexp, expressionTypeCallback) => {
+export const tokenizeHTML = (text, expressionRegexp, expressionTypeCallback) => {
   const closedTags = text.match(/<\/\w+>/gm);
   const uniqueClosedTags = new Set(closedTags);
   const rawElementsInText = [
@@ -118,5 +118,3 @@ const tokenizeHTML = (text, expressionRegexp, expressionTypeCallback) => {
 
   return tokens;
 };
-
-export default tokenizeHTML;

@@ -1,7 +1,7 @@
 import prettier from 'prettier';
 const { mapDoc } = prettier.doc.utils;
 
-import { encodeExpressions, decodeExpressions, tokenizeHTML } from '../lib/index';
+import { encodeExpressions, decodeExpressions, tokenizeHTML } from '../src';
 
 // args: path, print, textToDoc, options
 function embed(path, _print, textToDoc, options) {
