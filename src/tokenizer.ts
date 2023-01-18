@@ -78,9 +78,10 @@ const tokenizeHTML = (text, expressionRegexp, expressionTypeCallback) => {
     const beforeWhitespace = /\s/.test(text[offset + match.length]);
     const afterWhitespace = lastTokenType === 'start' || (lastTokenType === 'text' && /\s/.test(html[html.length - 1]));
 
-    const beforeInlineEndTag = /^<\/\w+(?<!address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h1|h2|h3|h4|h5|h6|header|li|main|nav|noscript|ol|p|pre|section|table|tfoot|thead|tbody|ul|video|tr|td|th|button)\s*>/.test(
-      text.slice(offset + match.length)
-    );
+    const beforeInlineEndTag =
+      /^<\/\w+(?<!address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h1|h2|h3|h4|h5|h6|header|li|main|nav|noscript|ol|p|pre|section|table|tfoot|thead|tbody|ul|video|tr|td|th|button)\s*>/.test(
+        text.slice(offset + match.length)
+      );
     const afterInlineEndTag =
       lastTokenType === 'text' &&
       (html.endsWith('/>') || // TODO: FIX THIS meaning <img > instead of <img />
@@ -118,4 +119,4 @@ const tokenizeHTML = (text, expressionRegexp, expressionTypeCallback) => {
   return tokens;
 };
 
-module.exports = tokenizeHTML;
+export default tokenizeHTML;

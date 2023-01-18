@@ -1,6 +1,7 @@
-const { encodeExpressions, decodeExpressions, tokenizeHTML } = require('../lib/index');
-const { mapDoc } = require('prettier').doc.utils;
-const prettier = require('prettier');
+import prettier from 'prettier';
+const { mapDoc } = prettier.doc.utils;
+
+import { encodeExpressions, decodeExpressions, tokenizeHTML } from '../lib/index';
 
 // args: path, print, textToDoc, options
 function embed(path, _print, textToDoc, options) {

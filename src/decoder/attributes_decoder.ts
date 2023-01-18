@@ -1,8 +1,9 @@
-const { concat, indent, hardline, group } = require('prettier').doc.builders;
+import prettier from 'prettier';
+const { indent, hardline, group } = prettier.doc.builders;
 
-const isInElement = (parts) => parts.some((part) => typeof part === 'string' && part.match(/eex[a|c]?\d+/));
+export const isInElement = (parts) => parts.some((part) => typeof part === 'string' && part.match(/eex[a|c]?\d+/));
 
-const decodeInAttributes = (parts, expressionMap) => {
+export const decodeInAttributes = (parts, expressionMap) => {
   const partlyDecodedParts = decodeInAttributeValues(parts, expressionMap);
 
   return decodeInAttributeNames(partlyDecodedParts, expressionMap);
@@ -43,14 +44,14 @@ const decodeInAttributeNames = (parts, expressionMap, shouldIndent = false) => {
 
       const expr = expressionMap.get(part);
       expressionMap.delete(part);
-      const list = [expr.print, indent(concat(nested))];
+      const list = [expr.print, indent(nested)];
 
       if (endOriginal.print !== '') {
         list.push(hardline);
         list.push(endOriginal.print);
       }
 
-      decodedParts.push(group(concat(list)));
+      decodedParts.push(group(list));
       skipIndex = endIndex;
     }
   }
@@ -89,9 +90,4 @@ const decodeInAttributeValues = (parts, expressionMap) => {
   }
 
   return decodedParts;
-};
-
-module.exports = {
-  isInElement,
-  decodeInAttributes,
 };

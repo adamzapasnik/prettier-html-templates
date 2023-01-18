@@ -1,4 +1,4 @@
-const { encodeExpressions, tokenizeHTML } = require('../lib');
+import { encodeExpressions, tokenizeHTML } from '../lib';
 
 test('throws error for missing end expression when start present', () => {
   const tokens = tokenizeHTML('<% start %>', /<%[\s\S]*%>/, () => ({ type: 'start' }));

@@ -139,4 +139,4 @@ const encodeExpressions = (tokens) => {
   return [textWithPlaceholders, expressionMap];
 };
 
-module.exports = encodeExpressions;
+export default encodeExpressions;

@@ -1,7 +1,7 @@
 const PLACEHOLDER_REGEXP = /<eext\d+/;
 
-const isInTableOrHead = (parts) => {
-  for (let [index, part] of parts.entries()) {
+export const isInTableOrHead = (parts) => {
+  for (const [index, part] of parts.entries()) {
     if (part === '/>') {
       // TODO: change name
       const shouldBeBreakPoint = parts[index - 2];
@@ -25,10 +25,10 @@ const isInTableOrHead = (parts) => {
   }
 };
 
-const decodeInTableOrHead = (parts, expressionMap) => {
+export const decodeInTableOrHead = (parts, expressionMap) => {
   const decodedParts = [];
 
-  for (let [index, part] of parts.entries()) {
+  for (const [index, part] of parts.entries()) {
     if (part === '/>') {
       const shouldBeBreakPointIndex = index - 2;
       // TODO: change name
@@ -49,9 +49,4 @@ const decodeInTableOrHead = (parts, expressionMap) => {
   }
 
   return decodedParts;
-};
-
-module.exports = {
-  isInTableOrHead,
-  decodeInTableOrHead,
 };

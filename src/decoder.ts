@@ -1,11 +1,8 @@
-const { breakParent, concat, group, line } = require('prettier').doc.builders;
-const { isInElement, decodeInAttributes } = require('./decoder/attributes_decoder');
-const { isInTableOrHead, decodeInTableOrHead } = require('./decoder/table_and_head_decoder');
-const {
-  isSelfClosingInText,
-  decodeSelfClosingInText,
-  isSelfClosingAfterOpenTag,
-} = require('./decoder/html_body_decoder');
+import prettier from 'prettier';
+const { breakParent, group, line } = prettier.doc.builders;
+import { isInElement, decodeInAttributes } from './decoder/attributes_decoder';
+import { isInTableOrHead, decodeInTableOrHead } from './decoder/table_and_head_decoder';
+import { isSelfClosingInText, decodeSelfClosingInText, isSelfClosingAfterOpenTag } from './decoder/html_body_decoder';
 
 const decodeExpressions = (expressionMap) => {
   const opts = { removeWhitespace: false };
@@ -133,7 +130,7 @@ const decodeExpressions = (expressionMap) => {
             // WITHOUT:  <span><% e %>a</span>
             if (part.contents.contents.parts[2] && part.contents.contents.parts[2].type === 'line') {
               decodedParts.pop();
-              decodedParts.push(group(concat([expression.print, line])));
+              decodedParts.push(group([expression.print, line]));
             }
           }
 
@@ -149,7 +146,7 @@ const decodeExpressions = (expressionMap) => {
 
           if (expression.print !== '') {
             if (expression.isMidExpression) {
-              decodedParts.push(concat([expression.print, breakParent]));
+              decodedParts.push([expression.print, breakParent]);
             } else {
               decodedParts.push(expression.print);
 
@@ -177,6 +174,15 @@ const decodeExpressions = (expressionMap) => {
           continue;
         }
 
+        if (part.join) {
+          const decodedPart = part.join('').replace(/eexs?\d+(?:eexs?)?/g, (match) => {
+            return expressionMap.get(match).print;
+          });
+
+          decodedParts.push(decodedPart);
+          continue;
+        }
+
         decodedParts.push(part);
       }
     }
@@ -185,4 +191,4 @@ const decodeExpressions = (expressionMap) => {
   };
 };
 
-module.exports = decodeExpressions;
+export default decodeExpressions;

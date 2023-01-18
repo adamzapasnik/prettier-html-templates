@@ -1,4 +1,4 @@
-const { tokenizeHTML } = require('../lib');
+import { tokenizeHTML } from '../lib';
 
 test('throws an error when type incorrect', () => {
   expect(() =>

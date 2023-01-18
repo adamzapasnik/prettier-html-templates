@@ -1,8 +1,9 @@
-const { line } = require('prettier').doc.builders;
+import prettier from 'prettier';
+const { line } = prettier.doc.builders;
 
 const PLACEHOLDER_REGEX = /<eext\d+/;
 
-const isSelfClosingInText = (parts) => {
+export const isSelfClosingInText = (parts) => {
   if (parts.length !== 2) return;
 
   const hasLine = parts[0].type === 'line' || parts[0].type === 'if-break';
@@ -14,7 +15,7 @@ const isSelfClosingInText = (parts) => {
   return PLACEHOLDER_REGEX.test(parts[1].contents.parts[0].contents.contents);
 };
 
-const decodeSelfClosingInText = (parts, expressionMap) => {
+export const decodeSelfClosingInText = (parts, expressionMap) => {
   const decodedParts = [];
   let removeWhitespace = false;
   let placeholder = parts[1].contents.parts[0].contents.contents.trim();
@@ -61,7 +62,7 @@ const decodeSelfClosingInText = (parts, expressionMap) => {
   return { decodedParts, removeWhitespace };
 };
 
-const isSelfClosingAfterOpenTag = (part) => {
+export const isSelfClosingAfterOpenTag = (part) => {
   if (
     part.type === 'group' &&
     part.contents &&
@@ -74,10 +75,4 @@ const isSelfClosingAfterOpenTag = (part) => {
   }
 
   return false;
-};
-
-module.exports = {
-  isSelfClosingInText,
-  decodeSelfClosingInText,
-  isSelfClosingAfterOpenTag,
 };
